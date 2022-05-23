@@ -12,7 +12,7 @@ Recommend for using Linux / macOS
 ## Download this repository
 
 ```bash
-git clone https://github.com/nimiusrd/MRR.git
+git clone https://github.com/peaceplayer0722/udagawa.git
 ```
 
 ## Update this repository
@@ -28,7 +28,7 @@ ref: https://docs.python.org/3/library/venv.html
 ### 作成 / make
 
 ```bash
-python3 -m venv .venv
+python -m venv .venv
 ```
 
 ### 有効化 / activate
@@ -36,7 +36,7 @@ python3 -m venv .venv
 Run this command before execution.
 
 ```bash
-. .venv/bin/activate
+.venv\Scripts\activate
 ```
 
 ## Install modules
