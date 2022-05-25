@@ -7,7 +7,7 @@ import numpy.typing as npt
 from matplotlib import rc
 from matplotlib.ticker import AutoLocator, FormatStrFormatter, MultipleLocator
 
-rc("text", usetex=True)
+rc("text", usetex=False)
 rc("font", size=16)
 
 
@@ -30,7 +30,7 @@ class Graph:
         self,
         img_path: Path = Path("img/out.pdf"),
     ) -> None:
-        self.ax.set_xlabel(r"Wavelength \(\lambda\) (nm)", fontsize=24)
+        self.ax.set_xlabel("Wavelength  (nm)", fontsize=24)
         self.ax.set_ylabel("Transmittance (dB)", fontsize=24)
         self.ax.axis([None, None, None, 5])
 

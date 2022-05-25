@@ -18,7 +18,7 @@ from MRR.simulator import (
 from MRR.transfer_function import simulate_transfer_function
 
 
-def optimize_L(
+def optimize_L(     #リング周長を計算
     n_g: float,
     n_eff: float,
     FSR: float,

@@ -11,10 +11,10 @@ import numpy.typing as npt
 from config.model import OptimizationConfig, SimulationConfig
 
 
-class Logger:
+class Logger:       #logを取る
     def __init__(self) -> None:
         format = "%Y-%m-%d-%H-%M-%S"
-        self.result_path = Path.cwd() / "result"
+        self.result_path = Path.cwd() / "result"        #Path.cwd=カレントディレクトリを取得
         self.result_path.mkdir(exist_ok=True)
         self.target = self.result_path / datetime.now().strftime(format)
         self.target.mkdir()
